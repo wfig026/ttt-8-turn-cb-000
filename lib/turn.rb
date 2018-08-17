@@ -31,5 +31,5 @@ end
 
 # Make the move
 def move(board, index)
-
+  i = index.to_i
 end
