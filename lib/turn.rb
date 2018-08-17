@@ -10,7 +10,6 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-# Determing is the chosen move is valid
 def valid_move?(board, index)
   if (position_taken?(board, index) == false && index.between?(0, 8) == true)
     return true
@@ -19,7 +18,6 @@ def valid_move?(board, index)
   end
 end
 
-# Find out if the chosen position is taken
 def position_taken?(board, index)
   position = board[index]
   if position == " " || position == "" || position == nil
@@ -29,7 +27,10 @@ def position_taken?(board, index)
   end
 end
 
-# Make the move
 def move(board, index)
-  i = index.to_i
+
+end
+
+def input_to_index(input)
+  index = input.to_i - 1
 end
