@@ -27,10 +27,10 @@ def position_taken?(board, index)
   end
 end
 
-def move(board, index, character = "X")
-
-end
-
 def input_to_index(input)
   index = input.to_i - 1
+end
+
+def move(board, index, character = "X")
+
 end
